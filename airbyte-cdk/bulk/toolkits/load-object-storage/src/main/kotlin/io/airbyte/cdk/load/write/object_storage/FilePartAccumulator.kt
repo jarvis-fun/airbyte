@@ -44,7 +44,7 @@ class FilePartAccumulator(
 
         while (true) {
             val bytePart =
-                ByteArray(ObjectStorageUploadConfiguration.DEFAULT_FILE_SIZE_BYTES.toInt())
+                ByteArray(ObjectStorageUploadConfiguration.DEFAULT_PART_SIZE_BYTES.toInt())
             val read = fileInputStream.read(bytePart)
 
             if (read == -1) {
